@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html><HTML><HEAD><META content="IE=9.0000" 
+http-equiv="X-UA-Compatible">
+
+<META content="text/html; charset=utf-8" http-equiv="Content-Type">
+<SCRIPT type="application/shiny-singletons"></SCRIPT>
+
+<SCRIPT type="application/html-dependencies">json2[2014.02.04];jquery[1.11.0];shiny[0.12.2];bootstrap[3.3.1]</SCRIPT>
+
+<SCRIPT src="shared/json2-min.js"></SCRIPT>
+
+<SCRIPT src="shared/jquery.min.js"></SCRIPT>
+<LINK rel="stylesheet" href="shared/shiny.css">
+<SCRIPT src="shared/shiny.min.js"></SCRIPT>
+
+<META name="viewport" content="width=device-width, initial-scale=1"><LINK rel="stylesheet" 
+href="shared/bootstrap/css/bootstrap.min.css">
+<SCRIPT src="shared/bootstrap/js/bootstrap.min.js"></SCRIPT>
+
+<SCRIPT src="shared/bootstrap/shim/html5shiv.min.js"></SCRIPT>
+
+<SCRIPT src="shared/bootstrap/shim/respond.min.js"></SCRIPT>
+<TITLE>Calculating your BMI</TITLE></HEAD>
+<BODY>
+<DIV class="container-fluid">
+<DIV class="row">
+<DIV class="col-sm-12">
+<H1>Calculating your BMI</H1></DIV></DIV>
+<DIV class="row">
+<DIV class="col-sm-4">
+<FORM class="well">
+<H5>The body mass index (BMI) is a measure of relative weight based on an 
+individual's mass and heigh, which is also commonly used to measure if you are 
+overweight by the health insituations.</H5>
+<DIV class="form-group shiny-input-container"><LABEL for="height">Please enter 
+your Height:cm</LABEL><INPUT id="height" class="form-control shiny-bound-input" 
+value="160" type="number" step="1" max="250" min="50"></DIV>
+<DIV class="form-group shiny-input-container"><LABEL for="weight">Please enter 
+your Weight:kg</LABEL><INPUT id="weight" class="form-control shiny-bound-input" 
+value="50" type="number" step="1" max="90" min="30"></DIV>
+<DIV><BUTTON class="btn btn-primary" 
+type="submit">submit</BUTTON></DIV></FORM></DIV>
+<DIV class="col-sm-8">
+<P>you entered a height of</P><PRE id="houtput" class="shiny-text-output shiny-bound-output"></PRE>
+<P>you entered a weight of</P><PRE id="woutput" class="shiny-text-output shiny-bound-output"></PRE>
+<P>Your Body Mass Index</P><PRE id="bmi" class="shiny-text-output shiny-bound-output"></PRE>
+<P>result</P><PRE id="result" class="shiny-text-output shiny-bound-output"></PRE></DIV></DIV></DIV></BODY></HTML>
